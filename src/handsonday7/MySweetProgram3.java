@@ -8,17 +8,21 @@ public class MySweetProgram3 {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		LinkedList<String> nombres = new LinkedList<String>();
-		nombres.push("Joao");
-		nombres.push("Adriano");
-		nombres.push("Maria");
+		LinkedList<String> names = new LinkedList<String>();
+		names.push("Joao");
+		names.push("Adriano");
+		names.push("Maria");
 		
-		Iterator<String> it = nombres.iterator();
+		Iterator<String> it = names.iterator();
 		
-		for(String s:nombres) {
-			System.out.println(s);
+		while(it.hasNext()) {
+			System.out.println(it.next());
 		}
 		
+//		for(String s:names) { 
+//			System.out.println(s);
+//		}
+//		
 		
 		}
 	}
