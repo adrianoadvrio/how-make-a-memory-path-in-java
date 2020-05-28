@@ -8,7 +8,7 @@ public class MySweetProgram8 {
 		
 		int [][] data = {
 				{4,6,3,10},
-				{4,2,40,1,5,7,4,3},
+				{4,2,40,1,5,7,4,3}, 
 				{5,34,1,43}
 		};
 		
@@ -19,9 +19,9 @@ public class MySweetProgram8 {
 		//System.out.println(data[1].length); // size of second inner array
 		
 		
-		for (int i = 0; i < data.length; i++) {
-			for (int j = 0; j < data[i].length; j++) {
-					System.out.print(data[i][j] + " ");
+		for (int i = 0; i < data.length; i++) { // fist i=0 (data[i).length = 4 and so on
+			for (int j = 0; j < data[i].length; j++) {  //// fist i=0 (data[i).length until 4 and so on
+					System.out.print(data[i][j] + " ");//print with j actualization on every interaction
 			   	}
 			    System.out.println();
 		   }

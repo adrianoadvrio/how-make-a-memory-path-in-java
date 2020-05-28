@@ -1,4 +1,4 @@
-package handsonday9;
+package handsonday10;
 
 import java.util.LinkedList;
 
@@ -21,16 +21,16 @@ public class MazeSolver {
 
 		while (true) {
 			
-			int y = path.peek().y; // row
+			int y = path.peek().y; // row      //update positions 
 			int x = path.peek().x; // column
 			
 			
-			maze[y][x] = 0;
+			maze[y][x] = 0;    // mark as zero the last position
 
 			// down
 			if (maze[y + 1][x] == 2) {
 				System.out.println("Moved down, You won");
-
+                return;
 			} else if (maze[y + 1][x] == 1) { // to walk must be '1' (path) if not ..another direction
 				System.out.println("Move down");
 				path.push(new Position(y + 1, x));
@@ -40,7 +40,7 @@ public class MazeSolver {
 			// left
 			if (maze[y][x-1] == 2) {
 				System.out.println("Moved left, You won");
-
+				 return;
 			} else if (maze[y][x-1] == 1) {
 				System.out.println("Move left");
 				path.push(new Position(y, x-1));
@@ -50,7 +50,7 @@ public class MazeSolver {
 			// up
 			if (maze[y - 1][x] == 2) {
 				System.out.println("Moved up, You won");
-
+				 return;
 			} else if (maze[y - 1][x] == 1) {
 				System.out.println("Move up");
 				path.push(new Position(y - 1, x));
@@ -60,7 +60,7 @@ public class MazeSolver {
 			// right
 			if (maze[y][x + 1] == 2) {
 				System.out.println("Moved right, You won");
-
+				 return;
 			} else if (maze[y][x + 1] == 1) {
 				System.out.println("Move right");
 				path.push(new Position(y, x + 1));

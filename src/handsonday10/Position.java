@@ -1,4 +1,4 @@
-package handsonday9;
+package handsonday10;
 
 public class Position {
 	public int y;
